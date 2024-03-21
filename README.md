@@ -26,7 +26,7 @@ npm install hoặc yarnh install
 4. Chạy dự án:
 npm start
 
-5. Truy cập trên trình duyệt:
+5. Mở trình duyệt:
 http://localhost:3000
 
 Đóng Góp
