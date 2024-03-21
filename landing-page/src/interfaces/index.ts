@@ -1,1 +1,6 @@
-export const hello = 'hello'
+export enum SelectedPage {
+    Products = "products",
+    AboutUs = "aboutus",
+    Testimonial = "testimonial",
+    Contact = "contact"
+}

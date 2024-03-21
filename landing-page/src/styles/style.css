@@ -1,0 +1,25 @@
+.ant-anchor-link-title {
+  margin-right: 24px;
+}
+
+.custom-anchor .ant-anchor-link-title {
+  text-decoration: none;
+}
+
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-item {
+  object-fit: cover;
+  margin: 10px;
+}
+
+.borderTR {
+  border-radius: 0px 80px 0px 80px;
+}
+
+.borderTL {
+  border-radius: 80px 0px 80px 0px;
+}
