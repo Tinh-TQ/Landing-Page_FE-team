@@ -7,9 +7,9 @@ import { StatisticValue } from '../../constants/config/statistic'
 const StatisticPage = () => {
   return (
     <div>
-        <Line/>
+        {/* <Line/>
         <Statistics values={StatisticValue}/>
-        <Line/>
+        <Line/> */}
     </div>
   )
 }
