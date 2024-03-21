@@ -7,7 +7,7 @@ const { Text } = Typography;
 
 const Content = (props: string) => {
   return (
-    <Text>{props}</Text>
+    <Text className=''>{props}</Text>
   );
 }
 

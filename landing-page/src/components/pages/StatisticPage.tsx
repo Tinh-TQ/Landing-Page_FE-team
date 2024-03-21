@@ -3,9 +3,8 @@ import Line from '../Line'
 import Statistics from '../Statictis'
 import { StatisticValue } from '../../constants/config/statistic'
 
-type Props = {}
 
-const StatisticPage = (props: Props) => {
+const StatisticPage = () => {
   return (
     <div>
         <Line/>
