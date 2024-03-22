@@ -31,7 +31,7 @@ const Content: React.FC = () => (
           alt={image.alt}
           width={243}
           height={348}
-          className={`image-item ${borderClass}`}
+          className={`image-item ${borderClass}`} 
         />
       );
     })}
