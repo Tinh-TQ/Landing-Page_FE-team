@@ -15,13 +15,13 @@ import CardContent from './components/CardContent';
 import { MockData } from './constants/config/ImageCard';
 import ButtonCard from './components/common/ButtonCard';
 import CardPage from './components/pages/CardPage';
+import ContentAbout from './components/about/ContentAbout';
+import ImageAbout from './components/about/ImageAbout';
+import AboutPage from './components/pages/AboutPage';
 
 function App() {
-  const { data, contentHard } = MockData;
   return (
     <div className='App'>
-      {/* <CardContent data={data} contentHard={contentHard} /> */}
-
       <Layout />
     </div>
   );

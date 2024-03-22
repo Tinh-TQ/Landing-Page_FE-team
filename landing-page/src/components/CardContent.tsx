@@ -1,7 +1,7 @@
 import React from 'react';
 import { StarOutlined } from '@ant-design/icons';
 import { CardContentProps } from '../interfaces';
-import { Card, Divider, Flex, Typography } from 'antd';
+import { Card, Col, Divider, Flex, Row, Typography } from 'antd';
 import ImageCard from './common/ImageCard';
 import ButtonCard from './common/ButtonCard';
 
@@ -31,10 +31,14 @@ const CardContent = ({ data, contentHard }: CardContentProps) => {
           </Flex>
           <Paragraph>{contentText}</Paragraph>
           <div className='footer'>
-            <Flex gap='large' align='space-evenly'>
-              <Title>${price}</Title>
-              <ButtonCard className='btn-card' />
-            </Flex>
+            <Row>
+              <Col span={10}>
+                <Title>${price}</Title>
+              </Col>
+              <Col span={0.1} offset={4}>
+                <ButtonCard className='btn-card' />
+              </Col>
+            </Row>
           </div>
         </Card>
       </div>

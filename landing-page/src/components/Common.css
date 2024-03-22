@@ -35,8 +35,8 @@ body {
 
 .element-statistic {
   position: absolute;
-  top: 26px;
-  left: 143px;
+  top: 42%;
+  left: 56%;
   font-size: 24px;
 }
 
@@ -55,6 +55,10 @@ body {
   color: rgba(0, 0, 0, 0.898);
 }
 
+.\'header.header-card\'\> {
+  margin: 50px 0 0 0;
+}
+
 :where(.css-dev-only-do-not-override-djtmh8).ant-segmented.ant-segmented-sm {
   border-radius: 24px;
 }
@@ -64,11 +68,21 @@ body {
   height: 200px;
   vertical-align: baseline;
 }
-
-img.ant-image-img.image.image-right.css-dev-only-do-not-override-djtmh8 {}
+.container-about {
+  margin: 4rem 6.5rem;
+}
 
 .image-right {
   border-radius: 0 25%;
+}
+
+:where(.css-dev-only-do-not-override-djtmh8).ant-segmented.ant-segmented-sm
+  .ant-segmented-item,
+:where(.css-dev-only-do-not-override-djtmh8).ant-segmented.ant-segmented-sm
+  .ant-segmented-thumb {
+  padding: 5%;
+  width: 8rem;
+  border-radius: 25%;
 }
 
 .image-left {
@@ -79,6 +93,8 @@ img.ant-image-img.image.image-right.css-dev-only-do-not-override-djtmh8 {}
   margin: 3px 0 0px 10px;
 }
 
+
+
 .img-card-container {
   margin-bottom: 10px;
 }
@@ -87,16 +103,6 @@ img.ant-image-img.image.image-right.css-dev-only-do-not-override-djtmh8 {}
   width: 229px;
   margin: 3px 0 0px 10px;
 }
-
-:where(.css-dev-only-do-not-override-djtmh8).ant-image .ant-image-mask {
-  border-radius: 0 25%;
-}
-
-/* .image-left
-  :where(.css-dev-only-do-not-override-djtmh8).ant-image
-  .ant-image-mask {
-  border-radius: 25% 0;
-} */
 
 .card-container {
   display: block;
@@ -117,7 +123,6 @@ img.ant-image-img.image.image-right.css-dev-only-do-not-override-djtmh8 {}
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
 }
 
 .d-flex {
@@ -142,6 +147,14 @@ div:where(.css-dev-only-do-not-override-djtmh8).ant-typography-h4,
 div:where(.css-dev-only-do-not-override-djtmh8).ant-typography-h4>textarea,
 :where(.css-dev-only-do-not-override-djtmh8).ant-typography h4 {
   margin-top: 0.5em;
+}
+
+.mg-top {
+  margin-top: 3rem;
+}
+
+.justify-text {
+  text-align: justify;
 }
 
 .ant-anchor-link-title {
