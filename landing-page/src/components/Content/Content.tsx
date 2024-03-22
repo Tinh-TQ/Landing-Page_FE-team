@@ -4,7 +4,6 @@ import Img2 from "../../assets/imgs/2.png";
 import Img3 from "../../assets/imgs/3.png";
 import Img4 from "../../assets/imgs/4.png";
 import Img5 from "../../assets/imgs/5.png";
-import '../../styles/style.css';
 
 interface Image {
   src: string;
@@ -19,7 +18,7 @@ const images: Image[] = [
   { src: Img5, alt: 'Image 5' },
 ];
 const Content: React.FC = () => (
-  <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <div style={{ display: 'flex', justifyContent: 'center', marginTop: '80px' }}>
     {images.map((image, index) => {
       const isEven = index % 2 === 0;
       const borderClass = isEven ? 'borderTR' : 'borderTL';
@@ -30,7 +29,7 @@ const Content: React.FC = () => (
           alt={image.alt}
           width={243}
           height={348}
-          className={`image-item ${borderClass}`}
+          className={`image-item ${borderClass}`} 
         />
       );
     })}
