@@ -19,11 +19,10 @@ const images: Image[] = [
   { src: Img5, alt: 'Image 5' },
 ];
 const Content: React.FC = () => (
-  <div style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
     {images.map((image, index) => {
       const isEven = index % 2 === 0;
       const borderClass = isEven ? 'borderTR' : 'borderTL';
-
       return (
         <img
           key={index}
