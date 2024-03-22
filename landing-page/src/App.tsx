@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Layout from './components/Layout';
+
 import { Row } from 'antd';
 import Line from './components/Line';
 import Statistics from './components/Statictis';
@@ -18,10 +20,16 @@ import CardPage from './components/pages/CardPage';
 function App() {
   const { data, contentHard } = MockData;
   return (
+<<<<<<< HEAD
     <div className='App'>
       {/* <CardContent data={data} contentHard={contentHard} /> */}
 
       <CardPage data={MockDataArray} />
+=======
+    <div className="App">
+      <Layout />
+        <StatisticPage/>
+>>>>>>> 6d0c2cb9d464fbe8e645a67a7cb19297aed5e11e
     </div>
   );
 }
