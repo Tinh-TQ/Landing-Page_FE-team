@@ -23,7 +23,8 @@ import AboutPage from './components/pages/AboutPage';
 function App() {
   return (
     <div className='App'>
-      <AboutPage />
+      <CardPage data={MockDataArray} />
+      {/* <AboutPage /> */}
     </div>
   );
 }
