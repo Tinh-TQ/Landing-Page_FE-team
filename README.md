@@ -12,24 +12,23 @@ Nhóm có 2 người:
 
 ## Cách Cài Đặt
 
-1. Sao chép repository:
+### 1. Sao chép repository:
 
-```bash
 git clone https://github.com/Tinh-TQ/Landing-Page_FE-team.git
 
-2. Di chuyển vào thư mục dự án:
+### 2. Di chuyển vào thư mục dự án:
 cd Landing-Page_FE-team
 
-3. Cài đặt các dependencies:
+### 3. Cài đặt các dependencies:
 npm install hoặc yarnh install
 
-4. Chạy dự án:
+### 4. Chạy dự án:
 npm start
 
-5. Mở trình duyệt:
+### 5. Mở trình duyệt:
 http://localhost:3000
 
-Đóng Góp
+## Đóng Góp
 Nếu bạn muốn đóng góp vào dự án, hãy làm theo các bước sau:
 
 Fork repository
