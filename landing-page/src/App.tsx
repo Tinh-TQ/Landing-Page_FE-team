@@ -11,7 +11,6 @@ import StatisticPage from './components/pages/StatisticPage';
 import SegmentsCard from './components/SegmentsCard';
 import { segmentValue } from './constants/config/SegmentValues';
 import ImageCard from './components/common/ImageCard';
-import { MockDataArray, imageContent } from './constants/config/ImageCard';
 import CardContent from './components/CardContent';
 import { MockData } from './constants/config/ImageCard';
 import ButtonCard from './components/common/ButtonCard';
@@ -23,8 +22,7 @@ import AboutPage from './components/pages/AboutPage';
 function App() {
   return (
     <div className='App'>
-      <CardPage data={MockDataArray} />
-      {/* <AboutPage /> */}
+      <Layout />
     </div>
   );
 }

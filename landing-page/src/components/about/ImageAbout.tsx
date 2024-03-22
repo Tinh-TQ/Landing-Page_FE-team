@@ -19,8 +19,8 @@ const ImageAbout = ({ className = '' }: ImageAboutProps) => {
           data={imageAbout[0]}
           state='right'
           className='mg-top size-about'
-          width='300'
-          height='280'
+          width='230'
+          height='200'
           top='45'
           left='-10'
         />
@@ -29,8 +29,8 @@ const ImageAbout = ({ className = '' }: ImageAboutProps) => {
           state='left'
           className='size-about'
           left='-10'
-          width='300'
-          height='280'
+          width='230'
+          height='200'
         />
       </Flex>
     </>

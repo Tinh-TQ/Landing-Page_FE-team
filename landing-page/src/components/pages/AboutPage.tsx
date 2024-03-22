@@ -12,7 +12,7 @@ const AboutPage = () => {
         <HeaderLandingPage content='About us' header='Why we are the best' />
         <Flex gap={100} justify='center' align='center' className='mg-top'>
           <ContentAbout className='mg-right width-50 height-80' />
-          <ImageAbout className='width-50 height-80' />
+          <ImageAbout />
         </Flex>
         <Button text='Read More' />
       </div>
