@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import '../../styles/style.css';
 import { ArrowRightOutlined } from '@ant-design/icons';
 
 

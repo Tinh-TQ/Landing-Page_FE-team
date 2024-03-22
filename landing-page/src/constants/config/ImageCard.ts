@@ -16,7 +16,6 @@ export const MockData: CardContentProps = {
     src: Image5,
     alt: 'image 5',
   },
-
   contentHard: {
     contentHeader: 'Chocolate Latte',
     contentRateStar: '4',
