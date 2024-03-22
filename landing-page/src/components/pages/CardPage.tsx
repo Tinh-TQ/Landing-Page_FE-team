@@ -5,6 +5,7 @@ import { CardContentProps } from '../../interfaces';
 import SegmentsCard from '../SegmentsCard';
 import { segmentValue } from '../../constants/config/SegmentValues';
 import Line from '../Line';
+import HeaderLandingPage from '../common/HeaderLandingPage';
 
 type CardPageProps = {
   data: CardContentProps[];
@@ -15,10 +16,10 @@ const { Paragraph } = Typography;
 const CardPage = ({ data }: CardPageProps) => {
   return (
     <>
-      <div className='header'>
-        <Paragraph className='color-text'>Our Products</Paragraph>
-        <Divider>From Top Qualities Materials</Divider>
-      </div>
+      <HeaderLandingPage
+        content='Our Products'
+        header='From Top Quality Materials'
+      />
       <div className='pill'>
         <SegmentsCard values={segmentValue} />
       </div>

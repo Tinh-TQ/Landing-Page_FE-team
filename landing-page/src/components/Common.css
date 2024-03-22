@@ -82,16 +82,6 @@ img.ant-image-img.image.image-right.css-dev-only-do-not-override-djtmh8 {
   margin: 3px 0 0px 10px;
 }
 
-:where(.css-dev-only-do-not-override-djtmh8).ant-image .ant-image-mask {
-  border-radius: 0 25%;
-}
-
-/* .image-left
-  :where(.css-dev-only-do-not-override-djtmh8).ant-image
-  .ant-image-mask {
-  border-radius: 25% 0;
-} */
-
 .card-container {
   display: block;
   flex-direction: column;
@@ -136,4 +126,45 @@ div:where(.css-dev-only-do-not-override-djtmh8).ant-typography-h4,
 div:where(.css-dev-only-do-not-override-djtmh8).ant-typography-h4 > textarea,
 :where(.css-dev-only-do-not-override-djtmh8).ant-typography h4 {
   margin-top: 0.5em;
+}
+
+.mg-top {
+  margin-top: 3rem;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.container-about {
+  margin: 4rem;
+}
+
+/* .size-about */
+:where(.css-dev-only-do-not-override-djtmh8).ant-image .ant-image-img {
+  width: 300px;
+  height: 280px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.height-100 {
+  height: 80%;
+}
+
+.ant-image-mask-left {
+  left: -10px;
+  width: 300px;
+  height: 280px;
+}
+
+.ant-image-mask-right {
+  width: 300px;
+  height: 280px;
 }

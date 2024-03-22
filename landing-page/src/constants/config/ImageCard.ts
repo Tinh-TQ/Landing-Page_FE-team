@@ -2,6 +2,8 @@ import Image5 from '../../assets/imgs/6.png';
 import Image6 from '../../assets/imgs/7.png';
 import Image7 from '../../assets/imgs/8.png';
 import Image8 from '../../assets/imgs/10.png';
+import Image9 from '../../assets/imgs/11.png';
+import Image10 from '../../assets/imgs/12.png';
 import { CardContentProps, ImageType } from '../../interfaces';
 
 export const image = [Image5, Image6, Image7, Image8];
@@ -96,3 +98,8 @@ export const MockDataArray: CardContentProps[] = [
 //   contentText: string;
 //   price: number;
 // }
+
+export const imageAbout: ImageType[] = [
+  { src: Image9, alt: 'image 9' },
+  { src: Image10, alt: 'image 10' },
+];

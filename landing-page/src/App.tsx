@@ -16,20 +16,14 @@ import CardContent from './components/CardContent';
 import { MockData } from './constants/config/ImageCard';
 import ButtonCard from './components/common/ButtonCard';
 import CardPage from './components/pages/CardPage';
+import ContentAbout from './components/about/ContentAbout';
+import ImageAbout from './components/about/ImageAbout';
+import AboutPage from './components/pages/AboutPage';
 
 function App() {
-  const { data, contentHard } = MockData;
   return (
-<<<<<<< HEAD
     <div className='App'>
-      {/* <CardContent data={data} contentHard={contentHard} /> */}
-
-      <CardPage data={MockDataArray} />
-=======
-    <div className="App">
-      <Layout />
-        <StatisticPage/>
->>>>>>> 6d0c2cb9d464fbe8e645a67a7cb19297aed5e11e
+      <AboutPage />
     </div>
   );
 }

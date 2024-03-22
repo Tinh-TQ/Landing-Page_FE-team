@@ -1,9 +1,9 @@
-import React from 'react'
-import Header from './Header'
-import Content from './Content/Content'
-import Footer from './Footer/Footer'
-import Button from './commons/Button'
-import SmallBtn from './commons/SmallBtn'
+import React from 'react';
+import Header from './Header';
+import Content from './content/Content';
+import Footer from './Footer/Footer';
+import Button from './commons/Button';
+import SmallBtn from './commons/SmallBtn';
 
 const Layout = () => {
   return (
@@ -14,7 +14,7 @@ const Layout = () => {
       {/* <SmallBtn /> */}
       {/* <Button onClick={(e: any) => console.log(e.target.value)}/> */}
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
