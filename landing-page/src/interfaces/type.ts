@@ -3,6 +3,10 @@ export interface StatisticType {
   content: string;
 }
 
+export interface valueImageStateType {
+  [key: string]: string;
+}
+
 export interface ImageType {
   src: string;
   alt: string;
@@ -20,4 +24,14 @@ export interface CardContentProps {
   data: ImageType;
   state?: string;
   contentHard: constHardImage;
+}
+
+export interface typeValueImageState {
+  [key: string]: string;
+}
+
+export interface testimonialType {
+  dataImage: ImageType;
+  name: string;
+  star: number;
 }

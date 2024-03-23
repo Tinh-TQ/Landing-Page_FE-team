@@ -3,6 +3,7 @@ import { Flex, Image, ImageProps } from 'antd';
 import { ImageType } from '../../interfaces';
 import '../Common.css';
 import styled, { css } from 'styled-components';
+import { imageState } from '../../constants/config/ImageCard';
 
 type ImageCardProps = {
   data: ImageType;
@@ -51,7 +52,7 @@ const ImageCard = ({
 
   return (
     <FlexStyled
-      customBorder={state === 'right' ? '25% 0' : '0 25%'}
+      customBorder={imageState[state]}
       customBottom={bottom}
       customTop={top}
       customRight={right}
@@ -60,9 +61,7 @@ const ImageCard = ({
       customWidth={width}
     >
       <Image
-        style={{
-          borderRadius: state === 'right' ? '25% 0' : '0 25%',
-        }}
+        style={{ borderRadius: `${imageState[state]}` }}
         src={src}
         alt={alt}
         className={`image image-${state} ${className} `}

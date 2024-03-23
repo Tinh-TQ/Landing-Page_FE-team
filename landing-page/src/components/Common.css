@@ -172,7 +172,7 @@ div:where(.css-dev-only-do-not-override-djtmh8).ant-typography-h4>textarea,
 
 .image-item {
   object-fit: cover;
-  margin: 10px;
+  margin: 2px;
 }
 
 .borderTR {
@@ -297,4 +297,14 @@ div:where(.css-dev-only-do-not-override-djtmh8).ant-typography-h4>textarea,
 .slide-img {
   width: 100px;
   margin: 0 auto;
+}
+
+img.ant-image-img.image.image-circle.width-10.height-10.css-dev-only-do-not-override-djtmh8{
+  width: 168px;
+  height: 151px;
+  vertical-align: baseline;
+}
+
+.ant-card-meta-detail {
+  margin-top: 10%;
 }

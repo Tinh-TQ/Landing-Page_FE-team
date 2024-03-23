@@ -9,6 +9,7 @@ import StatisticPage from './pages/StatisticPage';
 import CardPage from './pages/CardPage';
 import { MockDataArray, imageContent } from '../constants/config/ImageCard';
 import AboutPage from './pages/AboutPage';
+import TestimonialCard from './testimonial/TestimonialCard';
 
 const Layout = () => {
   return (
@@ -18,6 +19,7 @@ const Layout = () => {
       <StatisticPage />
       <CardPage data={MockDataArray} />
       <AboutPage />
+      <TestimonialCard dataImage={imageContent} name='Michael Wong' star={5} />
       <Footer />
       {/* <SmallBtn /> */}
       {/* <Button onClick={(e: any) => console.log(e.target.value)}/> */}

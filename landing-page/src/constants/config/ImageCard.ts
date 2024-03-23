@@ -4,14 +4,48 @@ import Image7 from '../../assets/imgs/8.png';
 import Image8 from '../../assets/imgs/10.png';
 import Image9 from '../../assets/imgs/11.png';
 import Image10 from '../../assets/imgs/12.png';
-import { CardContentProps, ImageType } from '../../interfaces';
+import Image11 from '../../assets/imgs/avt.png';
+import Image12 from '../../assets/imgs/avt2.png';
+import Image13 from '../../assets/imgs/avt3.png';
+import {
+  CardContentProps,
+  ImageType,
+  testimonialType,
+  valueImageStateType,
+} from '../../interfaces';
 
 export const image = [Image5, Image6, Image7, Image8];
+
+export const imageState: valueImageStateType = {
+  right: '25% 0',
+  left: '0 25%',
+  circle: '50%',
+};
 
 export const imageContent: ImageType = {
   src: Image5,
   alt: 'image 5',
 };
+
+export const mockTestimonialCardData: testimonialType[] = [
+  {
+    dataImage: { src: Image11, alt: 'Image 11' },
+    name: 'Michale Wong',
+    star: 5,
+  },
+
+  {
+    dataImage: { src: Image12, alt: 'Image 12' },
+    name: 'Avrill Song',
+    star: 3.5,
+  },
+
+  {
+    dataImage: { src: Image13, alt: 'Image 13' },
+    name: 'Jeanne Wood',
+    star: 4.5,
+  },
+];
 
 export const MockData: CardContentProps = {
   data: {
@@ -90,13 +124,6 @@ export const MockDataArray: CardContentProps[] = [
     },
   },
 ];
-
-// export interface constHardImage {
-//   contentHeader: string;
-//   contentRateStar: string;
-//   contentText: string;
-//   price: number;
-// }
 
 export const imageAbout: ImageType[] = [
   { src: Image9, alt: 'image 9' },
