@@ -130,3 +130,8 @@ export const imageAbout: ImageType[] = [
   { src: Image9, alt: 'image 9' },
   { src: Image10, alt: 'image 10' },
 ];
+export const imageBlog: ImageType[] = [
+  { src: Image8, alt: 'image 8' },
+  { src: Image9, alt: 'image 9' },
+  { src: Image10, alt: 'image 10' }
+];

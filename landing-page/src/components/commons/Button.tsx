@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { ArrowRightOutlined } from '@ant-design/icons';
+import '../Common.css';
 
 type State = {};
 type Props = {

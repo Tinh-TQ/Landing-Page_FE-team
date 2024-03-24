@@ -14,6 +14,7 @@ import ImageCard from './components/common/ImageCard';
 import CardContent from './components/CardContent';
 import {
   MockData,
+  imageBlog,
   imageContent,
   mockTestimonialCardData,
 } from './constants/config/ImageCard';
@@ -24,13 +25,17 @@ import ImageAbout from './components/about/ImageAbout';
 import AboutPage from './components/pages/AboutPage';
 import TestimonialCard from './components/testimonial/TestimonialCard';
 import TestimonialPage from './components/pages/TestimonialPage';
+import BlogCard from './components/blog/BlogCard';
+import BlogPage from './components/pages/BlogPage';
+import ButtonPlus from './components/common/ButtonPlus';
 
 function App() {
   return (
     <div className='App'>
-      {/* <Layout /> */}
+      <Layout />
       {/* <TestimonialCard dataImage={imageContent} name='Michael Wong' star={5} /> */}
-      <TestimonialPage data={mockTestimonialCardData} />
+      {/* <TestimonialPage data={mockTestimonialCardData} /> */}
+      {/* <BlogPage data={imageBlog}/> */}
     </div>
   );
 }
