@@ -3,7 +3,7 @@ import { StarOutlined } from '@ant-design/icons';
 import { CardContentProps } from '../interfaces';
 import { Card, Col, Divider, Flex, Row, Typography } from 'antd';
 import ImageCard from './common/ImageCard';
-import ButtonCard from './common/ButtonCard';
+import ButtonPlus from './common/ButtonPlus';
 
 const { Paragraph } = Typography;
 const { Title } = Typography;
@@ -31,14 +31,14 @@ const CardContent = ({ data, contentHard }: CardContentProps) => {
           </Flex>
           <Paragraph>{contentText}</Paragraph>
           <div className='footer'>
-            <Row>
-              <Col span={10}>
+            <Flex justify='space-between' align='center'>
+              <div className="card-footer-title">
                 <Title>${price}</Title>
-              </Col>
-              <Col span={0.1} offset={4}>
-                <ButtonCard className='btn-card' />
-              </Col>
-            </Row>
+              </div>
+              <div className="card-footer-plus">
+                <ButtonPlus />  
+              </div>
+            </Flex>
           </div>
         </Card>
       </div>

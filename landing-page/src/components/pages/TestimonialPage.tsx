@@ -2,6 +2,7 @@ import { Col, Flex, Row } from 'antd';
 import { testimonialType } from '../../interfaces';
 import HeaderLandingPage from '../common/HeaderLandingPage';
 import TestimonialCard from '../testimonial/TestimonialCard';
+import Line from '../Line';
 
 type TestimonialPageProps = {
   data: testimonialType[];
@@ -10,6 +11,7 @@ type TestimonialPageProps = {
 const TestimonialPage = ({ data }: TestimonialPageProps) => {
   return (
     <>
+      <Line/>
       <div className='container-testimonial'>
         <HeaderLandingPage content='Testimonial' header='What our buyers say' />
         <Flex
