@@ -30,7 +30,8 @@ const ImageCard = ({
   width,
 }: ImageCardProps) => {
   const { src, alt } = data;
-  
+    console.log(returnValueImageState(state));
+
   const FlexStyled = styled(Flex)<{
     customBorder?: string;
     customWidth?: string;

@@ -7,22 +7,23 @@ import SmallBtn from './commons/SmallBtn';
 import MainPage from './pages/MainPage';
 import StatisticPage from './pages/StatisticPage';
 import CardPage from './pages/CardPage';
-import { MockDataArray, imageContent } from '../constants/config/ImageCard';
+import { MockDataArray, imageBlog, mockTestimonialCardData } from '../constants/config/ImageCard';
 import AboutPage from './pages/AboutPage';
-import TestimonialCard from './testimonial/TestimonialCard';
+import TestimonialPage from './pages/TestimonialPage';
+import BlogPage from './pages/BlogPage';
+import { Flex } from 'antd';
 
 const Layout = () => {
-  return (
+  return (  
     <>
       <Header />
-      <MainPage />
-      <StatisticPage />
-      <CardPage data={MockDataArray} />
-      <AboutPage />
-      <TestimonialCard dataImage={imageContent} name='Michael Wong' star={5} />
+        <MainPage />
+        <StatisticPage />
+        <CardPage data={MockDataArray} />
+        <AboutPage />
+        <TestimonialPage data={mockTestimonialCardData}/>
+        <BlogPage data={imageBlog}/>
       <Footer />
-      {/* <SmallBtn /> */}
-      {/* <Button onClick={(e: any) => console.log(e.target.value)}/> */}
     </>
   );
 };
