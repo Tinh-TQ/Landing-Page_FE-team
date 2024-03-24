@@ -22,13 +22,11 @@ const ImageAbout = ({ className = '' }: ImageAboutProps) => {
           width='230'
           height='200'
           top='45'
-          left='-10'
         />
         <ImageCard
           data={imageAbout[1]}
           state='left'
           className='size-about'
-          left='-10'
           width='230'
           height='200'
         />
