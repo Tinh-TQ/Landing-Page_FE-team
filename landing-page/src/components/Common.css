@@ -34,6 +34,12 @@ html {
   left: 0;
 }
 
+@media (max-width: 640px) { 
+  .header {
+    flex-direction: column;
+  }
+}
+
 .logo {
   width: 45px;
   height: 40px;
@@ -136,6 +142,7 @@ html {
 .wave {
   width: 100%;
   height: 10px;
+  margin: 100px 0;
   position: relative;
 }
 
@@ -164,8 +171,8 @@ html {
 
 .element-statistic {
   position: absolute;
-  top: 26px;
-  left: 143px;
+  top: 42%;
+  left: 56%;
   font-size: 24px;
 }
 
@@ -176,8 +183,16 @@ html {
 
 .segment {
   font-size: 20px;
-  padding: 20px;
+  padding: 10px;
   margin: 30px 0 20px 0;
+}
+
+.color-text {
+  color: rgba(0, 0, 0, 0.898);
+}
+
+.\'header.header-card\'\> {
+  margin: 50px 0 0 0;
 }
 
 :where(.css-dev-only-do-not-override-djtmh8).ant-segmented.ant-segmented-sm {
@@ -195,10 +210,26 @@ html {
   height: 320px;
   margin: 0 auto;
   background-size: contain;
+  }
+.container-about {
+  margin: 4rem 6.5rem;
 }
 
 .image-right {
   border-radius: 0 25%;
+}
+
+:where(.css-dev-only-do-not-override-djtmh8).ant-segmented.ant-segmented-sm
+  .ant-segmented-item,
+:where(.css-dev-only-do-not-override-djtmh8).ant-segmented.ant-segmented-sm
+  .ant-segmented-thumb {
+  padding: 5%;
+  width: 8rem;
+  border-radius: 50px;
+}
+
+:where(.css-dev-only-do-not-override-djtmh8).ant-segmented .ant-segmented-item-selected {
+  color: #1890ff !important;  
 }
 
 .image-left {
@@ -208,6 +239,8 @@ html {
 .image-card {
   margin: 3px 0 0px 10px;
 }
+
+
 
 .img-card-container {
   margin-bottom: 10px;
@@ -288,6 +321,13 @@ div:where(.css-dev-only-do-not-override-djtmh8).ant-typography-h4>textarea,
   margin-top: 0.5em;
 }
 
+.mg-top {
+  margin-top: 3rem;
+}
+
+.justify-text {
+  text-align: justify;
+}
 
 .ant-anchor-link-title {
   margin-right: 24px;
@@ -313,6 +353,7 @@ div:where(.css-dev-only-do-not-override-djtmh8).ant-typography-h4>textarea,
   margin: 10px;
   cursor: pointer;
   position: relative;
+  margin: 2px;
 }
 
 .borderLeft {
@@ -337,6 +378,10 @@ div:where(.css-dev-only-do-not-override-djtmh8).ant-typography-h4>textarea,
   left: 0;
   text-align: left;
   padding: 10px;
+}
+
+.mg-top1 {
+  margin-top: 5%;
 }
 
 .btn {
@@ -455,4 +500,100 @@ div:where(.css-dev-only-do-not-override-djtmh8).ant-typography-h4>textarea,
   display: flex;
   flex-direction: column;
   right: -50px;
+}
+.slide-img {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background-color: #6d1609;
+  color: black ;
+}
+
+img.ant-image-img.image.image-circle.width-10.height-10.css-dev-only-do-not-override-djtmh8{
+  width: 168px;
+  height: 151px;
+  vertical-align: baseline;
+}
+
+.ant-card-meta-detail {
+  margin-top: 10%;
+}
+
+.width-275 {
+  width: 275px !important;
+}
+
+.mg-left {
+  margin-left: -10% !important;
+}
+
+.mg-left10 {
+  margin-left: 10px;
+}
+.mg-top-10{
+  margin-top: -8px;
+}
+
+.icons {
+  margin-right: 7px;
+  color: #1a0000;
+}
+
+.mg-top10 {
+  margin-top: 10px;
+}
+
+.mg-bottom10 {
+  margin-bottom: 10px;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+
+.footer-blog {
+  padding: 0 !important;
+}
+
+.btn-customer {
+  border: none;
+}
+
+.btn-customer:hover{
+  color: #6D1600 !important;
+}
+
+.blog-page {
+  margin-bottom: 100px;
+}
+
+.plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6D1600;
+  width: 20px;
+  height: 20px;
+  border-radius: 25% 0;
+  font-weight: 800;
+  color: #ccc;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.plus:hover {
+  background-color: #6d1601;
+  color: white;
+}
+
+
+.custom-segmented .ant-radio-button-wrapper {
+  border-radius: 50px; 
+}
+
+.fs-18 {
+  font-size: 18px;
 }

@@ -1,7 +1,11 @@
+import { ImagePosition } from "../constants/enums";
+
 export interface StatisticType {
   value?: number;
   content: string;
 }
+
+export type valueImageStateType = Partial<Record<ImagePosition, string>> & { default: string };
 
 export interface ImageType {
   src: string;
@@ -33,4 +37,9 @@ export interface BlogContentProps {
   data: ImageType;
   state?: string;
   contentHard: constHardBlog;
+}
+export interface testimonialType {
+  dataImage: ImageType;
+  name: string;
+  star: number;
 }

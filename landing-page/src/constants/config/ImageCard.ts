@@ -2,10 +2,19 @@ import Image5 from '../../assets/imgs/6.png';
 import Image6 from '../../assets/imgs/7.png';
 import Image7 from '../../assets/imgs/8.png';
 import Image8 from '../../assets/imgs/10.png';
-import Image9 from '../../assets/imgs/13.png';
+import Image13 from '../../assets/imgs/13.png';
 import Image10 from '../../assets/imgs/10.png';
 import Image11 from '../../assets/imgs/11.png';
 import { CardContentProps, ImageType, BlogContentProps } from '../../interfaces';
+import Image9 from '../../assets/imgs/11.png';
+import Image14 from '../../assets/imgs/12.png';
+import Image15 from '../../assets/imgs/avt.png';
+import Image16 from '../../assets/imgs/avt2.png';
+import Image17 from '../../assets/imgs/avt3.png';
+import {
+  testimonialType,
+} from '../../interfaces';
+import { ImagePosition } from '../enums';
 
 export const image = [
   Image5,
@@ -17,10 +26,37 @@ export const image = [
   Image11
 ];
 
+export const imageState = new Map<ImagePosition | string, string>([
+  ['right', '0 25%'],
+  ['left', '25% 0'],
+  ['circle', '50%'],
+  ['default', '80%']
+]);
+
 export const imageContent: ImageType = {
   src: Image5,
   alt: 'image 5',
 };
+
+export const mockTestimonialCardData: testimonialType[] = [
+  {
+    dataImage: { src: Image11, alt: 'Image 11' },
+    name: 'Michale Wong',
+    star: 5,
+  },
+
+  {
+    dataImage: { src: Image11, alt: 'Image 12' },
+    name: 'Avrill Song',
+    star: 3.5,
+  },
+
+  {
+    dataImage: { src: Image13, alt: 'Image 13' },
+    name: 'Jeanne Wood',
+    star: 4.5,
+  },
+];
 
 export const MockData: CardContentProps = {
   data: {
@@ -155,4 +191,13 @@ export const MockDataArrayBlog: BlogContentProps[] = [
       viewDetail: 'View details',
     },
   },
+];
+export const imageAbout: ImageType[] = [
+  { src: Image9, alt: 'image 9' },
+  { src: Image10, alt: 'image 10' },
+];
+export const imageBlog: ImageType[] = [
+  { src: Image8, alt: 'image 8' },
+  { src: Image9, alt: 'image 9' },
+  { src: Image10, alt: 'image 10' }
 ];
