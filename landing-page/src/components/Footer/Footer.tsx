@@ -22,44 +22,24 @@ type FooterProps = {
 
 const Footer = (props: FooterProps) => {
   return (
-    <footer
-      style={{
-        paddingTop: "30px",
-        paddingBottom: "30px",
-        backgroundColor: "#282A3A",
-      }}
-    >
-      <div style={{ margin: "0 auto" }}>
-        <Row
-          gutter={[24, 24]}
-          style={{
-            maxWidth: "1200px",
-            display: "flex",
-            margin: "0 auto",
-            color: "#fff",
-          }}
-        >
+    <footer className="footer__section">
+      <div className="left_footer">
+        <Row gutter={[24, 24]} className="container__footer">
           <Col span={8}>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                marginLeft: "0",
-              }}
-            >
+            <div className="top__logo" style={{ textAlign: 'justify' }}>
               <img
                 alt="logo"
                 src={Logo2}
-                style={{ width: "170px", height: "58px" }}
+                className="logo"
               />
-              <span className="sub-title" style={{ marginTop: "20px" }}>
+              <span className="sub-title" style={{ marginTop: "20px", fontSize: '20px' }}>
                 Discover tranquility at Ngopi a sanctuary for unwinding, where
                 your evenings are perfected with relaxation and rich flavors.
               </span>
-              <span className="sub-title" style={{ marginTop: "20px" }}>
+              <span className="sub-title" style={{ marginTop: "20px", fontSize: '20px' }}>
                 hello@ngopi.com
               </span>
-              <span className="sub-title">Phone : +01 23456789</span>
+              <span className="sub-title" style={{ marginTop: "20px", fontSize: '20px' }}>Phone : +01 23456789</span>
             </div>
           </Col>
           <Col span={16}>
@@ -75,16 +55,12 @@ const Footer = (props: FooterProps) => {
             <Row gutter={[24, 24]}>
               <Col
                 span={8}
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  right: "-50px",
-                }}
+                className="col__nav"
               >
-                <span className="sub-menu">Services</span>
-                <span className="sub-menu">Portfolio</span>
-                <span className="sub-menu">About us</span>
-                <span className="sub-menu">Testimonial</span>
+                <a href="#" className="sub-menu">Services</a>
+                <a href="#" className="sub-menu">Portfolio</a>
+                <a href="#" className="sub-menu">About us</a>
+                <a href="#" className="sub-menu">Testimonial</a>
               </Col>
               <Col
                 span={8}
@@ -94,22 +70,22 @@ const Footer = (props: FooterProps) => {
                   right: "-55px",
                 }}
               >
-                <span className="sub-menu">Suport</span>
-                <span className="sub-menu">Privacy Policy</span>
-                <span className="sub-menu">Terms & Conditions</span>
+                <a href="#" className="sub-menu">Suport</a>
+                <a href="#" className="sub-menu">Privacy Policy</a>
+                <a href="#" className="sub-menu">Terms & Conditions</a>
               </Col>
               <Col
                 span={8}
-                style={{ display: "flex", top: "-50px", right: "-45px" }}
+                style={{ display: "flex", top: "11px", right: "-45px", justifyContent: 'space-between'}}
               >
-                <FacebookOutlined className="icon-footer" />
-                <TwitterOutlined className="icon-footer" />
-                <InstagramOutlined className="icon-footer" />
-                <LinkedinOutlined className="icon-footer" />
-                <YoutubeOutlined className="icon-footer" />
+                <a href="#"><FacebookOutlined className="icon-footer" /></a>
+                <a href="#"><TwitterOutlined className="icon-footer" /></a>
+                <a href="#"><InstagramOutlined className="icon-footer" /></a>
+                <a href="#"><LinkedinOutlined className="icon-footer" /></a>
+                <a href="#"><YoutubeOutlined className="icon-footer" /></a>
               </Col>
             </Row>
-            <Row style={{ marginLeft: "60px", marginRight: "-45px" }}>
+            <Row style={{ marginLeft: "60px", marginRight: "-45px", marginTop: '24px'}}>
               <span className="title" style={{ right: "-50px" }}>
                 Subscribe
               </span>
@@ -118,7 +94,7 @@ const Footer = (props: FooterProps) => {
                 <input
                   type="text"
                   className="custom-search-input"
-                  placeholder="Enter your email"
+                  placeholder="name@domain.com"
                 />
                 <button className="custom-search-botton" type="submit">
                   Send

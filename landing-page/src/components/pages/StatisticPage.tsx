@@ -6,7 +6,7 @@ import { StatisticValue } from '../../constants/config/statistic'
 
 const StatisticPage = () => {
   return (
-    <div>
+    <div className='section__counter'>
         <Line/>
         <Statistics values={StatisticValue}/>
         <Line/>

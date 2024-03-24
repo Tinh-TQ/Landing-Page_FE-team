@@ -15,9 +15,9 @@ const { Paragraph } = Typography;
 const CardPage = ({ data }: CardPageProps) => {
   return (
     <>
-      <div className='header'>
-        <Paragraph className='color-text'>Our Products</Paragraph>
-        <Divider>From Top Qualities Materials</Divider>
+      <div className='main-section'>
+        <Paragraph className='title__section'>Our Products</Paragraph>
+        <Divider className='sub-title__section'>From Top Qualities Materials</Divider>
       </div>
       <div className='pill'>
         <SegmentsCard values={segmentValue} />
