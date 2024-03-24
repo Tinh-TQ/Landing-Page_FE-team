@@ -1,10 +1,9 @@
 import { useEffect, useState, useRef } from 'react';
-import { ReactNode } from 'react';
 import { Statistic, Col, Row } from 'antd';
 import CountUp from 'react-countup';
 import { StatisticType } from '../interfaces';
 import { Formatter, valueType } from 'antd/es/statistic/utils';
-import Line from './Line';
+import './Common.css'
 
 type StatisticsProps = {
   values: StatisticType[];
@@ -51,14 +50,14 @@ const Statistics = (props: StatisticsProps) => {
             }`}
             key={index}
           >
-            <div ref={statisticRef}>
+            <div ref={statisticRef} className='content-statistic'>
               <Statistic
-                title={values.content}
-                value={values.value}
-                formatter={isVisible ? formatter : undefined}
-              />
-              {isVisible && <span className='element-statistic'>+</span>}
-            </div>
+                    title={values.content}
+                    value={values.value}
+                    formatter={isVisible ? formatter : undefined}
+                />
+                  {isVisible && <span className='element-statistic'>+</span>}
+                </div>
           </Col>
         ))}
       </Row>

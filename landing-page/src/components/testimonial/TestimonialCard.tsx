@@ -8,26 +8,30 @@ const TestimonialCard = ({ dataImage, name, star }: testimonialType) => {
   return (
     <>
       <Card style={{ width: '25%', marginTop: 16 }} hoverable>
-        <Meta
-          avatar={
-            <ImageCard
-              data={dataImage}
-              state='circle'
-              className='width-10 height-10 image-item'
-              width='168'
-              height='151'
-              bottom='2'
+        <div className="testimonial-card-content">
+            <Meta
+              avatar={
+                <ImageCard
+                  data={dataImage}
+                  state='circle'
+                  className='width-10 height-10 image-item'
+                  width='168'
+                  height='151'
+                  bottom='2'
+                />
+              }
+              title={name}
+              description={<Rate allowHalf defaultValue={star} />}
             />
-          }
-          title={name}
-          description={<Rate allowHalf defaultValue={star} />}
-        />
-        <Paragraph className='justify-text mg-top'>
+        </div>
+        <div className="testimonial-card-content">
+        <Paragraph className='justify-text mg-top testimonial-card-content'>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
           adipisci excepturi consequatur nam eius, sequi repellat explicabo id
           quia eveniet, aspernatur assumenda, libero inventore architecto
           aperiam corporis voluptates tenetur quibusdam!
         </Paragraph>
+        </div>
       </Card>
     </>
   );

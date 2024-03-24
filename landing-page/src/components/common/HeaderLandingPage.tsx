@@ -17,8 +17,8 @@ const HeaderLandingPage = ({
 }: HeaderLandingPageProps) => {
   return (
     <div className={`'header ${className}'>`}>
-      <Paragraph className='color-text fs-18'>{content}</Paragraph>
-      <Title level={2}>{header}</Title>
+      <Paragraph className='color-text'>{content}</Paragraph>
+      <Title level={2} className='header-landing'>{header}</Title>
     </div>
   );
 };

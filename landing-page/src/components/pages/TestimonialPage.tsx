@@ -18,7 +18,7 @@ const TestimonialPage = ({ data }: TestimonialPageProps) => {
           justify='space-evenly'
           align='center'
           wrap='wrap'
-          className='mg-top'
+          className='mg-top '
         >
           {data.map(values => (
             <TestimonialCard

@@ -10,9 +10,9 @@ const AboutPage = () => {
     <>
       <div className='container-about'>
         <HeaderLandingPage content='About us' header='Why we are the best' />
-        <Flex gap={100} justify='center' align='center' className='mg-top'>
+        <Flex gap={100} justify='center' align='center' className='mg-top flex-about'>
           <ContentAbout className='mg-right width-50 height-80' />
-          <ImageAbout />
+          <ImageAbout className='image-about' />
         </Flex>
         <Button text='Read More' />
       </div>
