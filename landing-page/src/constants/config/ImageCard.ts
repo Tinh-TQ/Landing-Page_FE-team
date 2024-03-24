@@ -2,19 +2,29 @@ import Image5 from '../../assets/imgs/6.png';
 import Image6 from '../../assets/imgs/7.png';
 import Image7 from '../../assets/imgs/8.png';
 import Image8 from '../../assets/imgs/10.png';
+import Image13 from '../../assets/imgs/13.png';
+import Image10 from '../../assets/imgs/10.png';
+import Image11 from '../../assets/imgs/11.png';
+import { CardContentProps, ImageType, BlogContentProps } from '../../interfaces';
 import Image9 from '../../assets/imgs/11.png';
-import Image10 from '../../assets/imgs/12.png';
-import Image11 from '../../assets/imgs/avt.png';
-import Image12 from '../../assets/imgs/avt2.png';
-import Image13 from '../../assets/imgs/avt3.png';
+import Image14 from '../../assets/imgs/12.png';
+import Image15 from '../../assets/imgs/avt.png';
+import Image16 from '../../assets/imgs/avt2.png';
+import Image17 from '../../assets/imgs/avt3.png';
 import {
-  CardContentProps,
-  ImageType,
   testimonialType,
 } from '../../interfaces';
 import { ImagePosition } from '../enums';
 
-export const image = [Image5, Image6, Image7, Image8];
+export const image = [
+  Image5,
+  Image6,
+  Image7,
+  Image8,
+  Image9,
+  Image10,
+  Image11
+];
 
 export const imageState = new Map<ImagePosition | string, string>([
   ['right', '0 25%'],
@@ -36,7 +46,7 @@ export const mockTestimonialCardData: testimonialType[] = [
   },
 
   {
-    dataImage: { src: Image12, alt: 'Image 12' },
+    dataImage: { src: Image11, alt: 'Image 12' },
     name: 'Avrill Song',
     star: 3.5,
   },
@@ -60,6 +70,20 @@ export const MockData: CardContentProps = {
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta.',
     view: 360,
     price: 5,
+  },
+};
+
+export const MockDataBlog: BlogContentProps = {
+  data: {
+    src: Image9,
+    alt: 'image 9',
+  },
+  contentHard: {
+    authorBlog: 'John Doe',
+    date: 'Feb 23, 2024',
+    contentHeader:
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta.',
+    viewDetail: 'View details >',
   },
 };
 
@@ -126,6 +150,48 @@ export const MockDataArray: CardContentProps[] = [
   },
 ];
 
+
+export const MockDataArrayBlog: BlogContentProps[] = [
+  {
+    data: {
+      src: Image9,
+      alt: 'image 9',
+    },
+
+    contentHard: {
+      authorBlog: 'John Doe',
+      contentHeader: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
+      date: 'Feb 23, 2024',
+      viewDetail: 'View details',
+    },
+  },
+  {
+    data: {
+      src: Image10,
+      alt: 'image 10',
+    },
+
+    contentHard: {
+      authorBlog: 'John Doe',
+      contentHeader: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
+      date: 'Feb 23, 2024',
+      viewDetail: 'View details',
+    },
+  },
+  {
+    data: {
+      src: Image11,
+      alt: 'image 11',
+    },
+
+    contentHard: {
+      authorBlog: 'John Doe',
+      contentHeader: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
+      date: 'Feb 23, 2024',
+      viewDetail: 'View details',
+    },
+  },
+];
 export const imageAbout: ImageType[] = [
   { src: Image9, alt: 'image 9' },
   { src: Image10, alt: 'image 10' },

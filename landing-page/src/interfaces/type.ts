@@ -20,12 +20,24 @@ export interface constHardImage {
   price: number;
 }
 
+export interface constHardBlog {
+  authorBlog: string,
+  date: string,
+  contentHeader: string;
+  viewDetail: string;
+}
+
 export interface CardContentProps {
   data: ImageType;
   state?: string;
   contentHard: constHardImage;
 }
 
+export interface BlogContentProps {
+  data: ImageType;
+  state?: string;
+  contentHard: constHardBlog;
+}
 export interface testimonialType {
   dataImage: ImageType;
   name: string;
