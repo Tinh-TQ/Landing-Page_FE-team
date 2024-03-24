@@ -1,11 +1,11 @@
+import { ImagePosition } from "../constants/enums";
+
 export interface StatisticType {
   value?: number;
   content: string;
 }
 
-export interface valueImageStateType {
-  [key: string]: string;
-}
+export type valueImageStateType = Partial<Record<ImagePosition, string>> & { default: string };
 
 export interface ImageType {
   src: string;
@@ -24,10 +24,6 @@ export interface CardContentProps {
   data: ImageType;
   state?: string;
   contentHard: constHardImage;
-}
-
-export interface typeValueImageState {
-  [key: string]: string;
 }
 
 export interface testimonialType {

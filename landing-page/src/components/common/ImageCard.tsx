@@ -4,6 +4,7 @@ import { ImageType } from '../../interfaces';
 import '../Common.css';
 import styled, { css } from 'styled-components';
 import { imageState } from '../../constants/config/ImageCard';
+import { returnValueImageState } from '../../ultils/imageUltils';
 
 type ImageCardProps = {
   data: ImageType;
@@ -29,9 +30,9 @@ const ImageCard = ({
   width,
 }: ImageCardProps) => {
   const { src, alt } = data;
-
+  
   const FlexStyled = styled(Flex)<{
-    customBorder: string;
+    customBorder?: string;
     customWidth?: string;
     customHeight?: string;
     customLeft?: string;
@@ -52,7 +53,7 @@ const ImageCard = ({
 
   return (
     <FlexStyled
-      customBorder={imageState[state]}
+      customBorder={returnValueImageState(state)}
       customBottom={bottom}
       customTop={top}
       customRight={right}
@@ -61,7 +62,7 @@ const ImageCard = ({
       customWidth={width}
     >
       <Image
-        style={{ borderRadius: `${imageState[state]}` }}
+        style={{ borderRadius: `${returnValueImageState(state)}` }}
         src={src}
         alt={alt}
         className={`image image-${state} ${className} `}

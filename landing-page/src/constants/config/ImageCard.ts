@@ -11,16 +11,17 @@ import {
   CardContentProps,
   ImageType,
   testimonialType,
-  valueImageStateType,
 } from '../../interfaces';
+import { ImagePosition } from '../enums';
 
 export const image = [Image5, Image6, Image7, Image8];
 
-export const imageState: valueImageStateType = {
-  right: '25% 0',
-  left: '0 25%',
-  circle: '50%',
-};
+export const imageState = new Map<ImagePosition | string, string>([
+  ['right', '0 25%'],
+  ['left', '25% 0'],
+  ['circle', '50%'],
+  ['default', '80%']
+]);
 
 export const imageContent: ImageType = {
   src: Image5,
