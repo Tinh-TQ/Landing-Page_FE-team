@@ -1,11 +1,12 @@
 body {
-  font-family: 'Playfair Display', serif;
+
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
 }
 
 html {
@@ -34,11 +35,11 @@ html {
   left: 0;
 }
 
-@media (max-width: 640px) { 
+/* @media (max-width: 640px) { 
   .header {
     flex-direction: column;
   }
-}
+} */
 
 .logo {
   width: 45px;
@@ -465,7 +466,7 @@ div:where(.css-dev-only-do-not-override-djtmh8).ant-typography-h4>textarea,
     background-color: var(--text-color)
 }
 
-.left_footer {
+.container_footer {
   margin: 0 auto;
 }
 

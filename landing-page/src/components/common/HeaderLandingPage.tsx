@@ -18,7 +18,7 @@ const HeaderLandingPage = ({
   return (
     <div className={`'header ${className}'>`}>
       <Paragraph className='color-text fs-18'>{content}</Paragraph>
-      <Title level={2}>{header}</Title>
+      <Title level={2} className='header_title'>{header}</Title>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { Flex } from 'antd';
+import { Flex, Col, Row } from 'antd';
 import ImageCard from '../common/ImageCard';
 import { imageAbout } from '../../constants/config/ImageCard';
 
@@ -15,21 +15,29 @@ const ImageAbout = ({ className = '' }: ImageAboutProps) => {
         gap='large'
         className={`${className}`}
       >
-        <ImageCard
-          data={imageAbout[0]}
-          state='right'
-          className='mg-top size-about'
-          width='230'
-          height='200'
-          top='45'
-        />
-        <ImageCard
-          data={imageAbout[1]}
-          state='left'
-          className='size-about'
-          width='230'
-          height='200'
-        />
+        <Row gutter={[16, 16]}>
+          <Col xs={24} sm={12} md={12} lg={12} xl={12}>
+            <ImageCard
+              data={imageAbout[0]}
+              state='right'
+              className='mg-top size-about'
+              width='230'
+              height='200'
+              top='45'
+              left='-10'
+            />
+          </Col>
+          <Col xs={24} sm={12} md={12} lg={12} xl={12}>
+            <ImageCard
+              data={imageAbout[1]}
+              state='left'
+              className='size-about'
+              left='-10'
+              width='230'
+              height='200'
+            />
+          </Col>
+        </Row>
       </Flex>
     </>
   );
