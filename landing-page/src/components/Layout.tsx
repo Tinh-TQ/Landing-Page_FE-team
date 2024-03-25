@@ -21,8 +21,8 @@ const Layout = () => {
       <StatisticPage />
       <CardPage data={MockDataArray} />
       <AboutPage />
-      <TestimonialPage data={mockTestimonialCardData} />
-      <BlogPage data={imageBlog} />
+      {/* <TestimonialPage data={mockTestimonialCardData} /> */}
+      {/* <BlogPage data={imageBlog} /> */}
       <Footer />
     </>
   );

@@ -23,7 +23,6 @@ type FooterProps = {
 const Footer = (props: FooterProps) => {
   return (
     <footer className="footer__section">
-      <div className="left_footer">
         <Row gutter={[24, 24]} className="container__footer">
           <Col span={8}>
             <div className="top__logo" style={{ textAlign: 'justify' }}>
@@ -103,7 +102,6 @@ const Footer = (props: FooterProps) => {
             </Row>
           </Col>
         </Row>
-      </div>
     </footer>
   );
 };

@@ -11,8 +11,8 @@ type TestimonialPageProps = {
 const TestimonialPage = ({ data }: TestimonialPageProps) => {
   return (
     <>
-      <Line/>
       <div className='container-testimonial'>
+        <Line />
         <HeaderLandingPage content='Testimonial' header='What our buyers say' />
         <Flex
           justify='space-evenly'
@@ -20,13 +20,17 @@ const TestimonialPage = ({ data }: TestimonialPageProps) => {
           wrap='wrap'
           className='mg-top'
         >
-          {data.map(values => (
-            <TestimonialCard
-              dataImage={values.dataImage}
-              name={values.name}
-              star={values.star}
-            />
-          ))}
+          <Row gutter={[16, 16]}>
+            {data.map(values => (
+              <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                <TestimonialCard
+                  dataImage={values.dataImage}
+                  name={values.name}
+                  star={values.star}
+                />
+              </Col>
+            ))}
+          </Row>
         </Flex>
       </div>
     </>

@@ -42,7 +42,7 @@ const Statistics = (props: StatisticsProps) => {
 
   return (
     <>
-      <Row justify={'center'} className='row'>
+      <Row justify={'center'} className='row counter'>
         {props.values.map((values, index) => (
           <Col
             span={4}
