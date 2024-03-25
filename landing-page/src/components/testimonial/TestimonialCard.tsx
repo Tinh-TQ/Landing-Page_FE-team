@@ -17,7 +17,6 @@ const TestimonialCard = ({ dataImage, name, star }: testimonialType) => {
               width='168'
               height='151'
               bottom='2'
-              left='-9'
             />
           }
           title={name}

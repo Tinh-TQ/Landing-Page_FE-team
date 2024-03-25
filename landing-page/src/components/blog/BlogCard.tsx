@@ -19,7 +19,7 @@ const BlogCard = ( { data } :BlogCardProps ) => {
     bordered={true}
     style={{
       width: 300,
-      borderRadius: "0 20% 0 10%",
+      borderRadius: "0 18% 0 10%",
       border: "2px solid #dadada",
     }}
   >
@@ -31,7 +31,7 @@ const BlogCard = ( { data } :BlogCardProps ) => {
          className='width-275 mg-left mg-top-10'
          width='275'
          height='200'
-         left='-23'
+         left='-15'
          top="-10"
         />
           }

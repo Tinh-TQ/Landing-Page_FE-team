@@ -18,7 +18,7 @@ const CardContent = ({ data, contentHard }: CardContentProps) => {
     <>
       <div className='card-container'>
         <div className='img-card-container'>
-          <ImageCard data={data} state='right' className='image-card' />
+          <ImageCard data={data} state='right' className='image-card' width='230' left='10'/>
         </div>
         <Card hoverable style={{ width: 240 }}>
           <Meta title={contentHeader} />
