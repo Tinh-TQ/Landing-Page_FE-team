@@ -7,7 +7,7 @@ const { Paragraph } = Typography;
 const TestimonialCard = ({ dataImage, name, star }: testimonialType) => {
   return (
     <>
-      <Card style={{ width: '25%', marginTop: 16 }} hoverable>
+      <Card className='card-testimonial' hoverable>
         <div className="testimonial-card-content">
             <Meta
               avatar={

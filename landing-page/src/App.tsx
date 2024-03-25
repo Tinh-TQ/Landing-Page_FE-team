@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Layout from './components/Layout';
+import './Responsive.css'
 
 import { Row } from 'antd';
 import Line from './components/Line';
