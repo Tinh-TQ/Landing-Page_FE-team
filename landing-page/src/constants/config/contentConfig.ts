@@ -11,7 +11,7 @@ export const activityStatuses: ContentType[] = [
   {
     header: 'Resource',
     content: [
-      'Support', "Policy", 'Terms', "Conditions"
+      'Support', "Policy", 'Terms', "Conditions", "FAQ"
     ]
   },
 
