@@ -4,11 +4,12 @@ import ContentAbout from '../about/ContentAbout';
 import ImageAbout from '../about/ImageAbout';
 import '../Common.css';
 import Button from '../commons/Button';
+import '../ResponsiveApp.css';
 
 const AboutPage = () => {
   return (
     <>
-      <div className='container-about about__section'>
+      <div className='container-about '>
         <HeaderLandingPage content='About us' header='Why we are the best' />
         <Flex gap={100} justify='center' align='center' className='mg-top'>
           <Row gutter={[16, 16]}>

@@ -3,7 +3,8 @@ import { Statistic, Col, Row } from 'antd';
 import CountUp from 'react-countup';
 import { StatisticType } from '../interfaces';
 import { Formatter, valueType } from 'antd/es/statistic/utils';
-import './Common.css'
+import './Common.css';
+import './ResponsiveApp.css';
 
 type StatisticsProps = {
   values: StatisticType[];
@@ -41,7 +42,7 @@ const Statistics = (props: StatisticsProps) => {
 
   return (
     <>
-      <Row justify={'center'} className='row counter'>
+      <Row justify={'center'} className='row-counter'>
         {props.values.map((values, index) => (
           <Col
             span={4}
@@ -52,12 +53,12 @@ const Statistics = (props: StatisticsProps) => {
           >
             <div ref={statisticRef} className='content-statistic'>
               <Statistic
-                    title={values.content}
-                    value={values.value}
-                    formatter={isVisible ? formatter : undefined}
-                />
-                  {isVisible && <span className='element-statistic'>+</span>}
-                </div>
+                title={values.content}
+                value={values.value}
+                formatter={isVisible ? formatter : undefined}
+              />
+              {isVisible && <span className='element-statistic'>+</span>}
+            </div>
           </Col>
         ))}
       </Row>
