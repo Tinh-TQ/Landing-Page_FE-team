@@ -43,11 +43,9 @@ html {
   left: 0;
 }
 
-/* @media (max-width: 640px) { 
-  .header {
-    flex-direction: column;
-  }
-} */
+.mobile-menu-btn {
+  display: none;
+}
 
 .logo {
   width: 45px;
@@ -559,7 +557,7 @@ div:where(.css-dev-only-do-not-override-djtmh8).ant-typography-h4 > textarea,
   outline: none;
 }
 
-.custom-search-botton {
+.custom-search-button {
   position: absolute;
   right: 3px;
   top: 3px;
@@ -633,7 +631,7 @@ footer section
 }
 
 .container__footer {
-  max-width: 1200px !important;
+  /* max-width: 1200px !important; */
   display: flex !important;
   color: var(--text-footer-color);
   margin: 0 auto !important;
