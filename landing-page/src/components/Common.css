@@ -1,5 +1,4 @@
 body {
-
 }
 
 * {
@@ -11,8 +10,8 @@ body {
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
 }
-
 
 :root {
   --primary-color: #6d1600;
@@ -37,7 +36,6 @@ html {
 }
 
 .icon-menu {
-
 }
 .header {
   display: flex;
@@ -490,7 +488,6 @@ div:where(.css-dev-only-do-not-override-djtmh8).ant-typography-h4 > textarea,
   margin-bottom: 30px;
 }
 
-
 .sub-menu {
   font-size: 16px;
   color: #fff;
@@ -536,8 +533,7 @@ div:where(.css-dev-only-do-not-override-djtmh8).ant-typography-h4 > textarea,
   white-space: nowrap;
 }
 
-
-@media  (max-width: 670) {
+@media (max-width: 670) {
   .btn-name {
     font-size: 12px;
   }
@@ -545,8 +541,6 @@ div:where(.css-dev-only-do-not-override-djtmh8).ant-typography-h4 > textarea,
     font-size: 12px;
   }
 }
-
-
 
 .custom-search {
   position: relative;
@@ -621,7 +615,6 @@ footer section
   font-weight: 400;
 } */
 
-
 .footer__section {
   padding: 30px 0;
   background-color: var(--text-color);
@@ -644,20 +637,20 @@ footer section
   margin: 0 auto !important;
   flex-direction: row !important;
 }
- 
+
 .container__footer .top__logo {
   display: flex;
   flex-direction: column;
   margin-left: 0;
 }
- 
+
 .container__footer .top__logo .logo {
   width: 170px;
   height: 58px;
   margin-top: -3px;
   margin-left: -16px;
 }
- 
+
 .container__footer .top__logo .logo .sub-title {
   font-size: var(--sub-title) !important;
   color: var(--text-color) !important;
@@ -869,7 +862,7 @@ div.ant-statistic-content {
   box-sizing: border-box;
   outline: none;
 }
- 
+
 .custom-search-botton {
   position: absolute;
   right: 3px;
