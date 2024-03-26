@@ -5,10 +5,10 @@ import { StatisticValue } from '../../constants/config/statistic';
 
 const StatisticPage = () => {
   return (
-    <div className='section__counter'>
-        <Line/>
-        <Statistics values={StatisticValue}/>
-        <Line/>
+    <div className='statistic-page'>
+      <Line className='statistic-line' />
+      <Statistics values={StatisticValue} />
+      <Line className='statistic-line' />
     </div>
   );
 };
