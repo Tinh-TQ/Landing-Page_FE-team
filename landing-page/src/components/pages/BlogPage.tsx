@@ -1,8 +1,9 @@
-import { Flex } from "antd";
+import { Col, Flex, Row } from "antd";
 import { ImageType } from "../../interfaces"
 import HeaderLandingPage from "../common/HeaderLandingPage";
 import BlogCard from "../blog/BlogCard";
 import Line from "../Line";
+import Button from "../commons/Button";
 
 
 type BlogPageProps = {
@@ -15,11 +16,16 @@ const BlogPage = ({ data } : BlogPageProps) => {
       <div className="blog-page">
       <Line/>
       <HeaderLandingPage content='Blog' header="Read our articles" />
-      <Flex align="center" justify="center" gap={150} >
+      <Row gutter={[16, 16]} justify='space-evenly'  align='middle' className="grid-template-blog" >
         {data.map(value => (
-          <BlogCard data={value}/>
+          <Col xs={24} sm={24} md={12} lg={8} xl={8} >
+            <BlogCard data={value}/>
+           </Col>
         ))}
-      </Flex>
+      </Row>
+          <div className="btn-blog-end">
+            <Button text='Read More' className="btn-blog"/>
+          </div>
       </div>
     </>
   );

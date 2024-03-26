@@ -10,7 +10,7 @@ type ContentAboutProps = {
 const ContentAbout = ({ className = '' }: ContentAboutProps) => {
   return (
     <>
-      <div className={`${className}`}>
+      <div className={`area-content-about ${className}`}>
         <Paragraph className='justify-text'>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis sunt,
           dolores qui eligendi cumque magni asperiores ad aperiam tempora

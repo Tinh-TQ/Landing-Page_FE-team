@@ -16,7 +16,7 @@ export default class Button extends Component<Props, State> {
         const { text, disable, className, children = 'explore product' } = this.props
         const value = text || children
         return (
-            <div className='btn arrow-icon' style={{ marginTop: '26px' }}>
+            <div className={`btn arrow-icon ${className}`} style={{ marginTop: '26px' }}>
                 <div className='btn-name'>{value}</div>
                 <ArrowRightOutlined style={{ fontSize: '34px', color: '#fff' }} className='arrow-icon'/>
             </div>

@@ -14,24 +14,29 @@ const TestimonialPage = ({ data }: TestimonialPageProps) => {
       <div className='container-testimonial'>
         <Line />
         <HeaderLandingPage content='Testimonial' header='What our buyers say' />
-        <Flex
+        {/* <Flex
           justify='space-evenly'
           align='center'
           wrap='wrap'
-          className='mg-top'
+          className='mg-top '
+        > */}
+        <Row
+          gutter={[16, 16]}
+          justify='space-between'
+          align='middle'
+          className='row-testimonial'
         >
-          <Row gutter={[16, 16]}>
-            {data.map(values => (
-              <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-                <TestimonialCard
-                  dataImage={values.dataImage}
-                  name={values.name}
-                  star={values.star}
-                />
-              </Col>
-            ))}
-          </Row>
-        </Flex>
+          {data.map(values => (
+            <Col xs={24} sm={24} md={12} lg={8} xl={8} offset={0.5}>
+              <TestimonialCard
+                dataImage={values.dataImage}
+                name={values.name}
+                star={values.star}
+              />
+            </Col>
+          ))}
+        </Row>
+        {/* </Flex> */}
       </div>
     </>
   );
