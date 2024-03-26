@@ -5,7 +5,11 @@ import SmallBtn from './commons/SmallBtn';
 import MainPage from './pages/MainPage';
 import StatisticPage from './pages/StatisticPage';
 import CardPage from './pages/CardPage';
-import { MockDataArray, imageBlog, mockTestimonialCardData } from '../constants/config/ImageCard';
+import {
+  MockDataArray,
+  imageBlog,
+  mockTestimonialCardData,
+} from '../constants/config/ImageCard';
 import AboutPage from './pages/AboutPage';
 import TestimonialPage from './pages/TestimonialPage';
 import BlogPage from './pages/BlogPage';
@@ -15,14 +19,13 @@ import Header from './Header/Header';
 const Layout = () => {
   return (
     <>
-
       <Header />
       <MainPage />
       <StatisticPage />
       <CardPage data={MockDataArray} />
       <AboutPage />
-      <TestimonialPage data={mockTestimonialCardData} /> 
-     <BlogPage data={imageBlog} /> 
+      <TestimonialPage data={mockTestimonialCardData} />
+      <BlogPage data={imageBlog} />
       <Footer />
     </>
   );

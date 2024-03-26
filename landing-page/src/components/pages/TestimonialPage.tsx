@@ -20,17 +20,22 @@ const TestimonialPage = ({ data }: TestimonialPageProps) => {
           wrap='wrap'
           className='mg-top '
         > */}
-          <Row gutter={[16, 16]} justify='space-between' align="middle" className='row-testimonial'>
-            {data.map(values => (
-              <Col xs={24} sm={24} md={12} lg={8} xl={8} offset={0.5}>
-                <TestimonialCard
-                  dataImage={values.dataImage}
-                  name={values.name}
-                  star={values.star}
-                />
-              </Col>
-            ))}
-          </Row>
+        <Row
+          gutter={[16, 16]}
+          justify='space-between'
+          align='middle'
+          className='row-testimonial'
+        >
+          {data.map(values => (
+            <Col xs={24} sm={24} md={12} lg={8} xl={8} offset={0.5}>
+              <TestimonialCard
+                dataImage={values.dataImage}
+                name={values.name}
+                star={values.star}
+              />
+            </Col>
+          ))}
+        </Row>
         {/* </Flex> */}
       </div>
     </>

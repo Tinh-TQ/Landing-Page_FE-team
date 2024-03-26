@@ -8,7 +8,7 @@ type HeaderLandingPageProps = {
 };
 
 const { Paragraph } = Typography;
-const {Title} = Typography;
+const { Title } = Typography;
 
 const HeaderLandingPage = ({
   content,
@@ -18,7 +18,9 @@ const HeaderLandingPage = ({
   return (
     <div className={`'header ${className}'>`}>
       <Paragraph className='color-text'>{content}</Paragraph>
-      <Title level={2} className='header-landing'>{header}</Title>
+      <Title level={2} className='header-landing'>
+        {header}
+      </Title>
     </div>
   );
 };
