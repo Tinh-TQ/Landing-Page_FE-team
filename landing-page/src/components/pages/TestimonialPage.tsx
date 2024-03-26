@@ -3,7 +3,7 @@ import { testimonialType } from '../../interfaces';
 import HeaderLandingPage from '../common/HeaderLandingPage';
 import TestimonialCard from '../testimonial/TestimonialCard';
 import Line from '../Line';
-
+import '../ResponsiveApp.css';
 type TestimonialPageProps = {
   data: testimonialType[];
 };
@@ -12,7 +12,7 @@ const TestimonialPage = ({ data }: TestimonialPageProps) => {
   return (
     <>
       <div className='container-testimonial'>
-        <Line />
+        <Line className='line-testimonial' />
         <HeaderLandingPage content='Testimonial' header='What our buyers say' />
         {/* <Flex
           justify='space-evenly'

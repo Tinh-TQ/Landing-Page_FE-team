@@ -1,12 +1,13 @@
 import React from 'react';
 import './Common.css';
+import './ResponsiveApp.css';
 
-const Line= ( ) => {
-  return (
-    <div className='wave'>
+type LineProps = {
+  className?: string;
+};
 
-    </div>
-  )
-}
+const Line = ({ className = '' }: LineProps) => {
+  return <div className={`wave ${className}`}></div>;
+};
 
-export default Line
+export default Line;
