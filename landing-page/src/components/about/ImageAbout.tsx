@@ -22,7 +22,7 @@ const ImageAbout = ({ className = '' }: ImageAboutProps) => {
           className='mg-top size-about'
           width='230'
           height='200'
-          top='45'
+          left='10'
         />
 
         <ImageCard

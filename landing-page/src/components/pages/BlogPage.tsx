@@ -4,6 +4,7 @@ import HeaderLandingPage from '../common/HeaderLandingPage';
 import BlogCard from '../blog/BlogCard';
 import Line from '../Line';
 import Button from '../commons/Button';
+import '../ResponsiveApp.css';
 
 type BlogPageProps = {
   data: ImageType[];

@@ -822,7 +822,7 @@ div.ant-statistic-content {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .grid-template-blog {
-    margin: 8px 0 8px 100px !important;
+    margin: 8px 0 8px 38px !important;
   }
 }
 
@@ -907,4 +907,10 @@ div.ant-statistic-content {
 .ant-col.ant-col-8.col__nav.ant-col-xs-24.ant-col-sm-24.ant-col-md-12.ant-col-lg-12.ant-col-xl-12.css-dev-only-do-not-override-djtmh8 {
   text-align: justify;
   width: 226px;
+}
+
+@media screen and (min-width: 1096px) and (max-width: 1366px) {
+  .card-page-responsive {
+    margin-left: 15% !important;
+  }
 }

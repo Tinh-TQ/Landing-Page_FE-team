@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Footer from './Footer/Footer';
 import Button from './commons/Button';
 import SmallBtn from './commons/SmallBtn';
@@ -15,19 +15,22 @@ import TestimonialPage from './pages/TestimonialPage';
 import BlogPage from './pages/BlogPage';
 import { Flex } from 'antd';
 import Header from './Header/Header';
+import { StyledDiv } from './Layout.styled';
 
 const Layout = () => {
   return (
-    <>
-      <Header />
-      <MainPage />
-      <StatisticPage />
-      <CardPage data={MockDataArray} />
-      <AboutPage />
-      <TestimonialPage data={mockTestimonialCardData} />
-      <BlogPage data={imageBlog} />
+    <Fragment>
+      <StyledDiv>
+        <Header />
+        <MainPage />
+        <StatisticPage />
+        <CardPage data={MockDataArray} />
+        <AboutPage />
+        <TestimonialPage data={mockTestimonialCardData} />
+        <BlogPage data={imageBlog} />
+      </StyledDiv>
       <Footer />
-    </>
+    </Fragment>
   );
 };
 
