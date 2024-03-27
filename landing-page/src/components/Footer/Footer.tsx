@@ -17,14 +17,14 @@ type FooterProps = {
 };
 
 const Footer = (props: FooterProps) => {
-  console.table(activityStatusesIcons);
+  console.table(activityStatuses);
   return (
     <footer className="footer__section">
       <Flex>
-        <Row gutter={[128, 64]} className="container__footer">
-          <Col span={8} xs={24} sm={24} md={12} lg={12} xl={12}>
+        <Row gutter={[128, 42]} className="container__footer">
+          <Col span={8} xs={24} sm={24} md={24} lg={12} xl={12}>
             <div className="top__logo" style={{ textAlign: "justify" }}>
-              <img alt="logo" src={Logo2} className="logo" />
+              <img alt="logo" src={Logo2} className="logo_icon" />
               <span
                 className="sub-title"
                 style={{ marginTop: "8px", fontSize: "20px" }}
@@ -46,8 +46,8 @@ const Footer = (props: FooterProps) => {
               </span>
             </div>
           </Col>
-          <Col span={8} xs={24} sm={24} md={12} lg={12} xl={12}>
-            <Row gutter={[24, 24]} className="row__footer">
+          <Col span={8} xs={24} sm={24} md={24} lg={12} xl={12}>
+            <Row gutter={[42, 42]} className="row__footer">
               {activityStatuses.map((value, index) => {
                 return (
                   <div className="footer-right" key={index}>
@@ -64,7 +64,7 @@ const Footer = (props: FooterProps) => {
                       xl={12}
                     >
                       {value?.content.map((item: any, itemIndex: any) => (
-                        <div key={itemIndex} style={{ display: "flex" }}>
+                        <div key={itemIndex} style={{ display: "flex"}} className="container-sub-menu">
                           <a href="#" className="sub-menu">
                             {item}
                           </a>
