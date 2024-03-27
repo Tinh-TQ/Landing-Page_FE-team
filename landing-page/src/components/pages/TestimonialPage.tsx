@@ -11,7 +11,7 @@ type TestimonialPageProps = {
 const TestimonialPage = ({ data }: TestimonialPageProps) => {
   return (
     <>
-      <div className='container-testimonial'>
+      <div className='container-testimonial' id='testimonial'>
         <Line className='line-testimonial' />
         <HeaderLandingPage content='Testimonial' header='What our buyers say' />
         {/* <Flex
@@ -21,7 +21,7 @@ const TestimonialPage = ({ data }: TestimonialPageProps) => {
           className='mg-top '
         > */}
         <Row
-          gutter={[16, 16]}
+          gutter={[8, 8]}
           justify='space-between'
           align='middle'
           className='row-testimonial'

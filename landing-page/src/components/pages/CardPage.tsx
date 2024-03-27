@@ -19,7 +19,7 @@ const { Paragraph } = Typography;
 const CardPage = ({ data }: CardPageProps) => {
   return (
     <>
-      <div className='card-page'>
+      <div className='card-page' id='products'>
         <HeaderLandingPage
           content='Our Products'
           header='From Top Quality Materials'
