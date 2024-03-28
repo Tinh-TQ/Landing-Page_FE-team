@@ -57,7 +57,7 @@ const Statistics = (props: StatisticsProps) => {
                 value={values.value}
                 formatter={isVisible ? formatter : undefined}
               />
-              {isVisible && <span className='element-statistic'>+</span>}
+
             </div>
           </Col>
         ))}

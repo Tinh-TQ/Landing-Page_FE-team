@@ -85,10 +85,15 @@
     margin: 50px 0;
   }
   .statistic-page .ant-row-center {
-    width: 230%;
+    width: 130%;
     justify-content: start;
     margin-left: -25%;
   }
+
+  .statistic-page .ant-row-center > .ant-col .ant-col-4 col .border-right .css-dev-only-do-not-override-djtmh8 {
+    margin-left: 100px;
+  }
+
   .line-testimonial::after {
     left: 21% !important;
   }
@@ -114,7 +119,7 @@
 
 @media screen and (min-width: 1024px) {
   .statistic-line::after {
-    left: -20%;
+    left: -10%;
     width: 150%;
   }
   .statistic-line {
