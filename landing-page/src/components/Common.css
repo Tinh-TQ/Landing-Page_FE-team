@@ -332,9 +332,6 @@ html {
   margin: 0 auto;
   background-size: contain;
 }
-.container-about {
-  margin: 4rem 6.5rem;
-}
 
 .image-right {
   border-radius: 0 25%;
@@ -810,7 +807,7 @@ div.ant-statistic-content {
 
 @media screen and (min-width: 1199px) {
   .grid-template-blog {
-    margin: 10px 0 10px 100px !important;
+    margin: 10px 0 !important;
   }
   .card-testimonial .ant-card-meta-detail {
     width: 80% !important;

@@ -18,7 +18,7 @@ const BlogPage = ({ data }: BlogPageProps) => {
         <HeaderLandingPage content='Blog' header='Read our articles' />
         <Row
           gutter={[16, 16]}
-          justify='space-evenly'
+          justify='space-between'
           align='middle'
           className='grid-template-blog'
         >

@@ -20,8 +20,8 @@ import { StyledDiv } from './Layout.styled';
 const Layout = () => {
   return (
     <Fragment>
+      <Header />
       <StyledDiv className='container'>
-        <Header />
         <MainPage />
         <StatisticPage />
         <CardPage data={MockDataArray} />
