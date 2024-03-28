@@ -49,6 +49,7 @@ const ImageCard = ({
       right: ${props => props.customRight + 'px'};
       bottom: ${props => props.customBottom + 'px'};
       top: ${props => props.customTop + 'px'};
+
     }
   `;
 

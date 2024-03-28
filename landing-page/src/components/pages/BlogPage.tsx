@@ -4,6 +4,7 @@ import HeaderLandingPage from '../common/HeaderLandingPage';
 import BlogCard from '../blog/BlogCard';
 import Line from '../Line';
 import Button from '../commons/Button';
+import '../ResponsiveApp.css';
 
 type BlogPageProps = {
   data: ImageType[];
@@ -17,7 +18,7 @@ const BlogPage = ({ data }: BlogPageProps) => {
         <HeaderLandingPage content='Blog' header='Read our articles' />
         <Row
           gutter={[16, 16]}
-          justify='space-evenly'
+          justify='space-between'
           align='middle'
           className='grid-template-blog'
         >
