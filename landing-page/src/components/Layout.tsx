@@ -20,7 +20,7 @@ import { StyledDiv } from './Layout.styled';
 const Layout = () => {
   return (
     <Fragment>
-      <StyledDiv>
+      <StyledDiv className='container'>
         <Header />
         <MainPage />
         <StatisticPage />
