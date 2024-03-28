@@ -18,7 +18,14 @@ const CardContent = ({ data, contentHard }: CardContentProps) => {
     <>
       <div className='card-container'>
         <div className='img-card-container'>
-          <ImageCard data={data} state='right' className='image-card' width='230' left='10'/>
+          <ImageCard
+            data={data}
+            state='right'
+            className='image-card'
+            width='230'
+            left='10'
+            bottom='8'
+          />
         </div>
         <Card hoverable style={{ width: 240 }}>
           <Meta title={contentHeader} />
@@ -32,11 +39,11 @@ const CardContent = ({ data, contentHard }: CardContentProps) => {
           <Paragraph>{contentText}</Paragraph>
           <div className='footer'>
             <Flex justify='space-between' align='center'>
-              <div className="card-footer-title">
+              <div className='card-footer-title'>
                 <Title>${price}</Title>
               </div>
-              <div className="card-footer-plus">
-                <ButtonPlus />  
+              <div className='card-footer-plus'>
+                <ButtonPlus />
               </div>
             </Flex>
           </div>
